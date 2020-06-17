@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cits3403 Project</title>
+        <link rel="stylesheet" type="text/css" href="Resources/CSS/style.css">
+        
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
+        
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
+        
+        <!-- bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+    
+    </head>
+    
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                <!-- collapsed nav bar --> 
+                    <div class="navbar-header">
+                        <button class ="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#history-navbar" >
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="website-name">Agile Web Development </h1>
+                    </div>
+
+                <!-- regular nav bar --> 
+                    <div class="collapse navbar-collapse" id="history-navbar">
+                        <ul class="nav navbar-nav navbar-right">
+                        <li><a href='htmlpage2.html' class="nav-item">HTML</a></li>
+                        <li><a href='csspage.html' class="nav-item">CSS</a></li>
+                        <li><a href='js.html' class="nav-item">JS</a></li>
+                        <li><a href='me.html' class="nav-item">About Me</a></li>
+                        </ul>
+                
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="css-intro">
+            <h3 class="page-title">Overview of JavaScript</h3>
+            <div class = "container">    
+                <div class="intro">
+                    <h3 class="title-example">Purpose of JavaScript</h3>
+                    <p class="explanation">Javascript is an object oriented programming language currently used in more than 94% of web pages. Client side Javascript adds a collection of objects, methods and properties which allow scripts to interact with a browser and the document object model (DOM). Client side Javascript code is processed by the clients web browser at runtime rather than on a web server. This allows developers to create user interfaces which provide feedback to users as they browse web pages, providing web pages with interactivity, functionality and behaviours.</p>
+                </div> 
+                <div class="intro">
+                    <h3 class="title-example">History of JavaScript</h3>
+                    <p class="explanation">In September 1995, Brandan Eich an employee of Netscape Communications Corporation released the first version of JavaScript (JS). Following its release, 3 additional versions were developed and included JavaScript in Netscape Navigator, JScript in Internet explorer, and CEnvi in ScriptEase. As its popularity grew it became clear that the language needed to become consistent and be properly maintained and managed, so Netscape gave the job of setting up a language specification to ECMA in 1997 and has since released 8 standards. Other organisations have largely contributed to the success of JS by releasing applications like Node.js and ReactJS making it useful in both front and back-end development, giving JS more applications and more efficiency for web developers. Frameworks like jquery have made mastering web development much easier. Browsers improvements have allowed JavaScript to be processed faster than ever, making it a practical choice for web developers. 
+                    </p>
+                </div> 
+            </div>
+        </section>
+        
+        <section class="examples">
+            <h3 class="page-title">Applications of JavaScript</h3>
+            <div class = "container">    
+                <div class="exa">
+                    <h3 class="title-example">Document Object Model (DOM)</h3>
+                    <p class="explanation"> The Document Object Model (DOM) is an API that represents how HTML & XML documents are read by the browser, and describes objects and methods you can use to manipulate a document. The DOM provides JS with a way to easily manipulate, structure and style an HTML document.</p>
+                    <p class="explanation">My interactive example on the CSS page uses the DOM with JS to manipulate the style of HTML elements. When a selector is clicked, the event handler “onclick()” calls the corresponding JS function which uses the DOM method “getElementById()” to find the line of element it wants to manipulate, in the case of the “ID selector” it gets the “idSelec.” The JS then applies then applies a style to the element found by “getElementById,” in the case of “idSelec” the JS changes its background to pink.
+                    </p>
+                </div> 
+                <div class="exa">
+                    <h3 class="title-example">Forms</h3>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <p class="explanation">Data validation is necessary to ensure the data collected from forms is correct, clean and useful. Developers can use JavaScript to do this validation without invoking the server, this ensures that only necessary calls to the server are made. The form on the left uses JS to validate data by calling the validate() function when the form is submitted. The validate function checks if all the fields have been filled, if the 2 passwords match, and if the age is greater than 18. If all these fields are filled correctly, the function returns true and the form is submitted. If they don't the function will return false and produce an alert listing all the fields the user needs to fix. </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <form action='feff' onsubmit="return validate(this);" method="post" >
+                                <p>Name: <input type="text" name="inputName"></p>
+                                <p>Password: <input type='password' name='p1'></p>
+                                <p>Repeat password: <input type='password' name='p2'></p>
+                                <p>Age (must be over 18): <input type='number' name='ages'></p>
+                                <input type="submit" value="Submit Form">
+                            </form>
+                        </div>
+                        <script src=Resources/JS/form.js></script>
+                    </div>
+                        
+                </div> 
+                <div class="exa">
+                    <h3 class="title-example">Asynchronous JavaScript and XML (AJAX)</h3>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <p class="explanation">Asynchronous JavaScript and XML (AJAX), allows web pages to be updated asynchronously (without having to refresh the page). It uses a combination of technologies including HTML & CSS for styling information, the DOM & javascript to display the information, a method for exchanging data e.g. XMLHttpRequest object and a format for data sent to the browser e.g. JSON. </p>
+                            <p class="explanation">The corona virus death count on the right uses AJAX principles to update the death totals every 6 seconds. When the page is initially loaded the JS is signalled to execute. This JS uses the AJAX callback fetch() to send a request to the server for the corona virus data. The server then processes the request and sends a response back in the JSON format. The correct death tolls are then accessed from this data using JS and displayed on the webpage. This process repeats itself every 6 seconds so that the death tolls are kept up to date without having to reload the page. </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="ajax">
+                                <p class="topic">Corona virus death count</p>
+                                <p class="country">World</p>
+                                <p id="test" class="count"></p>
+                                <p class="country">Australia</p>
+                                <p id="test2" class="count"></p>
+                            </div>
+                        </div>
+                        <script src=Resources/JS/ajax.js></script>
+                        <script src=Resources/JS/ajax2.js></script>
+                    </div>
+                </div> 
+            </div>
+            
+        </section>
+    
+    </body>
+</html>

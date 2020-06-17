@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cits3403 Project</title>
+        <link rel="stylesheet" type="text/css" href="Resources/CSS/style.css">
+        
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
+        
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
+        
+        <!-- bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+    
+    </head>
+    
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                <!-- collapsed nav bar --> 
+                    <div class="navbar-header">
+                        <button class ="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#history-navbar" >
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="website-name">Agile Web Development </h1>
+                    </div>
+
+                <!-- regular nav bar --> 
+                    <div class="collapse navbar-collapse" id="history-navbar">
+                        <ul class="nav navbar-nav navbar-right">
+                        <li><a href='htmlpage2.html' class="nav-item">HTML</a></li>
+                        <li><a href='csspage.html' class="nav-item">CSS</a></li>
+                        <li><a href='js.html' class="nav-item">JS</a></li>
+                        <li><a href='me.html' class="nav-item">About Me</a></li>
+                        </ul>
+                
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="css-intro">
+            <h3 class="page-title">Overview of CSS</h3>
+            <div class = container>    
+                <div class="intro">
+                    <h3 class="title-example">Purpose of HTML</h3>
+                    <p class="explanation">HTML, which stands for Hypertext Markup Language, is a scripting language used to define the structure and layout of webpages displayed on web browsers. These web pages are a series of pages that are connected by hyperlinks. HTML consists of a series of elements which tell the browser how to display the content. These elements are represented by tags such as ‘heading’ and ‘paragraph’, however the browser does not display these tags rather they are used to render the content of the web page. </p>
+                </div> 
+            </div>
+        </section>
+        <section class="timeline">
+            <div class = "container">
+                <div class="intro">
+                    <h3 class="page-title">History of HTML</h3>
+                    <div class = "exa"> 
+                        <h3 class= "title-timeline">1993: HTML1.0</h3>
+                        <p class="explanation">Created by physicist Tim Berners-Lee, the first version HTML was a system designed to allow scientists to share papers with one another using electronic networking methods. He created a simple version of the language SGML which allowed people who weren’t specialised in SGML to share their technical documents. HTML was particualy useful as it made it easy to share documents through hyperlinks. The language was limited in terms of styling, only contained basic elements like text controls and images, and it was only supported by 2 browsers, lynx and mosaic.</p>
+                    </div>
+                    <div class = "exa"> 
+                        <h3 class= "title-timeline">1995: HTML 2.0</h3>
+                        <p class="explanation">The second version of HTML was realised in 1995 by IETF (Internet Engineering Task Force). HTML 2 provided the first set of official standards for HTML and aimed to support more browsers, improve presentation, improve styling and include more useful elements. It included all the features of HTML 1, but also introduced new styling features to change the webpage background, text colour and text interface. It also introduced queries like key word searches and basic forms for data transfer from computer to server.</p>
+                    </div>
+                    <div class = "exa"> 
+                        <h3 class= "title-timeline">1995: HTML 3.0</h3>
+                        <p class="explanation">As a draft standard released by W3C, HTML 3.0 contained many new features including tables, layout for math formulas, text-wrap and new browser features such as banner and fig however it was not addopted in full by any browser. HTML 3.0 was released during a time where browsers were at ‘war’ to implement the best features and introduced proprietary elements that only worked on their browsers causing the language to become very fragmented. It was important to stop the fragmentation by releasing a HTML standard that worked on all browsers. This caused W3C to abandon HTML 3.0 and begin to work on HTML 3.2.</p>
+                    </div>
+                    <div class = "exa"> 
+                        <h3 class= "title-timeline">1997: HTML 3.2</h3>
+                        <p class="explanation">Released by W3C as the official industry wide standard, HTML 3.2 added support for style sheets and included improved form features and the script tag so JavaScript could be applied easily.</p>
+                    </div>
+
+                    <div class = "exa"> 
+                        <h3 class= "title-timeline">1999: HTML 4.01</h3>
+                        <p class="explanation">As further development, HTML 4.01 focussed on separating presentation and styling information from the actual content by marking many HTML tags as outdated, and making the use of style sheets necessary. It also cleaned-up and improved many elements from previous versions including forms, images, tables and objects.</p>
+                    </div>
+
+                    <div class = "exa"> 
+                        <h3 class= "title-timeline">2008: HTML 5.0</h3>
+                        <p class="explanation">Developed by WHATWG and W3C, HTML 5.0 made HTML simpler to write, provided more features and had better error handling. Some of the new features include canvas, video, audio and the support of multimedia elements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="examples">
+            <h3 class="page-title">Key HTML element descriptions</h3>
+            <div class = "container">    
+                <div class="exa">
+                    <h3 class="title-example">&lt;a> Anchor tag &lt;/a></h3>
+                    <p class="explanation">Defines a hyperlink which is used to link web pages, email addresses, locations in the same page. Its most important attributes are the “href” attribute which states the URL that the hyperlink points too and the “target” attribute which defines how a link will be opened.</p>
+                    <div class='eg'>
+                        <p class="exampletext"> &lt;!-- This anchor tag defines a text link with a target of "_blank" which will open the CSS page of this web page in a new browser window--></p>
+                        <p class="exampletext"> &lt;a href=csspage.html><a href=csspage.html target="_blank"> CSS Page </a> &lt;/a></p>
+                    </div>
+                </div>  
+                <div class="exa">
+                    <h3 class="title-example">&lt;div> Div tag &lt;/div></h3>
+                    <p class="explanation">It’s a block level element that groups HTML elements together enabling CSS and JS to be applied too many elements at once. </p>
+                    <div class="eg">
+                        <p class="exampletext"> &lt;!-- This div tag groups a heading and 2 paragraphs together and changes the divs text colour to green—></p>
+
+                        <div id="myDiv" style="color:#b8c689;"> <p class="exampletext" style = "color:#5a5a5a;">&lt;div id="myDiv" style="color:#cddd97;"></p>
+                            <h5 class="indent">&lt;h5>This is a subtitle within a div &lt;/h5></h5>
+                            <p class="indent">&lt;p>This is a paragraph within a div &lt;/p></p>
+                        </div>
+                        &lt;/div>
+                    </div>    
+                </div>
+                <div class="exa">
+                    <h3 class="title-example">&lt;script> Script tag &lt;/script></h3>
+                    <p class="explanation">Allows us to embed or reference executable code which is typically client side javascript.</p>
+                    <div class='eg'>
+                        <p class="exampletext"> &lt;!-- This example shows how you can import an external script using the script element which turns the text green when you click it (*note the click me button does work!)--></p>
+                        &lt;div id="colourEg" onclick="changeColour()"><div id="colourEg" onclick="changeColour()" class="indent">Click me</div>&lt;/div>
+                        <p class="exampletext"> &lt;script src='Resources/JS/htmlexample.js'>&lt;script><script src='Resources/JS/htmlexample.js'></script>
+                        </p>
+                        
+                        <p class="exampletext"> &lt;!-- This example shows how you can use script embedded in html file to create an alert--></p>
+                        &lt;div id="alertEg" onclick="alertEg()"><div id="EgAlert" onclick="alertEg()" class="indent">Click me</div>&lt;/div>
+                        <p class="exampletext"> &lt;script>function alertEg(){alert('you clicked the buttom')}&lt;script><script>function alertEg(){alert('you clicked the buttom')}</script>
+                        </p>
+                    </div>
+                </div>
+                <div class="exa">
+                    <h3 class="title-example">&lt;span> Span tag &lt;/span></h3>
+                    <p class="explanation">Allow us to group and apply styles to inline elements</p>
+                    <div class='eg'>
+                        <p class="exampletext"> &lt;!-- This span tag allows us to change the background colour of the text inside it to green --></p>
+                        <p class="exampletext"> &lt;p>this is my example for span &lt;span style="background-color: #cddd97;"><span style="background-color: #cddd97;"> CSS Page </span> &lt;span> do you understand how it works&lt;/p></p>
+                    </div>
+                </div>
+                <div class="exa">
+                    <h3 class="title-example">&lt;ol>&lt;ul>&lt;li>List tags&lt;/li>&lt;/ul>&lt;/ol></h3>
+                    <p class="explanation">They are bulleted lines of text that allow us to create structured, maintainable and accessible documents and are commonly used for timelines, to create nav bars and for general content. </p>
+                    <div class='eg'>
+                        <p class="exampletext"> &lt;!-- This example shows how to use list tags to create a numbered list--></p>
+                        &lt;ol><ol class="indent"><li>&lt;li>list item 1&lt;li></li> <li>&lt;li>list item 2&lt;li></li></ol>&lt;ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

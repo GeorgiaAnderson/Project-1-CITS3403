@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cits3403 Project</title>
+        <link rel="stylesheet" type="text/css" href="Resources/CSS/style.css">
+        
+        <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900' rel='stylesheet' type='text/css'>
+        
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600italic,700,900' rel='stylesheet' type='text/css'>
+        
+        <!-- bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+    
+    </head>
+    
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                <!-- collapsed nav bar --> 
+                    <div class="navbar-header">
+                        <button class ="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#history-navbar" >
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="website-name">Agile Web Development </h1>
+                    </div>
+
+                <!-- regular nav bar --> 
+                    <div class="collapse navbar-collapse" id="history-navbar">
+                        <ul class="nav navbar-nav navbar-right">
+                        <li><a href='htmlpage2.html' class="nav-item">HTML</a></li>
+                        <li><a href='csspage.html' class="nav-item">CSS</a></li>
+                        <li><a href='js.html' class="nav-item">JS</a></li>
+                        <li><a href='me.html' class="nav-item">About Me</a></li>
+                        </ul>
+                
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="css-intro">
+            <h3 class="page-title">Overview of CSS</h3>
+            <div class = container>    
+                <div class="intro">
+                    <h3 class="title-example">Purpose and Motivation of CSS</h3>
+                    <p class="explanation">CSS is a language used for describing the presentation of web pages. Its independent of HTML, and it allows developers to control the appearance and display of their website because its based on a set of formatting rules. These rules provide a standard way to define, apply and manage style characteristics like colour, layout, and font and also provide a way to make web pages responsive to different screen sizes and device types.</p>
+                    <p class="explanation">Before CSS there was very little that could be done to change the style of a web page. As more people started to use HTML the demand for styling capabilities grew but HTML was designed just to hold content and was not capable of complex styling. In 1994 Hakon Wium released the first draft of CSS but it wasn't until 1996 that W3C released its first recommendation. Since its implementation by browsers web pages have become far more functional, have improved design, have some consistency and have reduced the amount of bandwidth needed to load them.</p>
+                </div> 
+            
+                <div class="intro">
+                    <h3 class="title-example">Benefits of seperating content from style</h3>
+                    <ul>
+                        <li class="explanation">Less code -- By using a CSS style sheet that can be applied to multiple pages rather than styling each individual item in a html document, you reduce the amount of code your web page uses which shortens web page loading times.
+                        </li>
+                        <li class="explanation">Bandwidth reduction -- By separating content from style you decrease the file transfer size because the CSS document will be stored externally and will only be examined when a visitor requests your website .
+                        </li>
+                        <li class="explanation">Maintainability -- Using CSS style sheet makes maintaining and updating websites styles easy because you only need to update the style for an element once, CSS will automatically change the style of that element on every page throughout the website.
+                        </li>
+                        <li class="explanation">Consistency -- By applying one style sheet to your web page rather than individually styling each element you increase the consistency of your styling and save yourself a lot of time.
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </section>
+        
+        <section class="examples">
+            <h3 class="page-title">Key CSS Selectors</h3>
+            <div class = "container">    
+                <div class="exa">
+                    <h3 class="title-example">Cascading property</h3>
+                    <p class="explanation">The cascade property in CSS is an algorithm that decides which CSS style will apply to an element. The algorithm takes into account 4 factors of deceasing importance, the first being what style sheet the declaration is made in. Declarations in author style sheets will always override those of user style sheets except in the case of important declarations set by the user, these will override all other declarations. The second factor is importance, a declaration with the “!important” tag will override all other declarations. The third factor is specificity, this is a number that the browser calculates when applying css and is based on the types of selectors the declaration uses. The forth factor is source order, where if you have more than one declaration with the same weight then the one that comes last in the css code will be applied. </p>
+                    <p class="explanation">In my example i demonstrate the effect that the cascade has on the competing background colour of paragraphs. It shows two things: (1)   Even though the cascadeDiv is set to blue the paragraphs inside the div who who have a class or ID are not blue because their background colour declaration is more specific. (2)   ID is more specific than class and hence the paragraph with an ID is set to pink, overwriting the blue and green colours.</p> 
+         
+                    <div class= "row"> 
+                        <div class="col-sm-6">
+                            <div class='eg'>
+                                <p> <span class="subsubtitle-example">CSS </span> </p>
+                                <p class="exampletext"> .cascadeDiv { <br> background-color: #cfe0e8; <br>} </p>
+                                <p class="exampletext"> .cascadePara { <br> background-color: #cfffe5; <br>} </p>
+                                <p class="exampletext"> #cascadeParaId { <br> background-color: #fadadd; <br>} </p>
+                            </div> 
+                        </div>
+                        <div class="col-sm-6">
+                            <div class='eg'>
+                                <p> <span class="subsubtitle-example">HTML </span> </p>
+                                <p> &lt;div class = "cascadeDiv">  </p>
+                                    <p class="indent">&lt;p> this is a paragraph with no attributes &lt;/p></p>
+                                    <p class="indent"> &lt;p class = "cascadePara">this is a paragraph inside div with a class &lt;/p> </p>
+                                    <p class="indent"> &lt;p class = "cascadePara" id="cascadeParaId">this is a paragraph inside div with an id and class &lt;/p> </p>
+                                <p> &lt;/div> </p>
+                                <p> &lt;p class = "cascadePara">this is a paragraph outside the div with a class &lt;/p></p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class='eg'>
+                        <p> <span class="subsubtitle-example">Output </span> </p>
+                        <div class = "cascadeDiv"> 
+                            <p>this is a paragraph with no attributes</p>
+                            <p class = "cascadePara">this is a paragraph inside div with a class</p>
+                            <p class = "cascadePara" id="cascadeParaId">this is a paragraph inside div with an id and class</p>
+                        </div>
+                        <p class = "cascadePara">this is a paragraph outside the div with a class</p>
+                    </div> 
+
+                </div>
+                <div class="exa">
+                    <h3 class="title-example">Selector Definition</h3>
+                    <p class="explanation">Selectors define which HTML elements are going to be manipulated by CSS code.</p>
+                </div>
+                
+                <div class="exa">
+                    <h3 class="title-example">Basic Selectors</h3>
+                    <p> <span class="subtitle-example">Universal selector:</span> Is denoted by an "*" and is used to select any type of element in an HTML page.</p>
+                    <div class='eg'>
+                        <p class="exampletext"> /*This CSS will select all elements and change their colour to green*/</p>
+                        <p class="exampletext"> * { <br> color:green; <br> } </p>
+                    </div>
+                    <p> <span class="subtitle-example">Class selector:</span> Denoted by a "." and is used to select HTML elements with a specific class attribute</p>
+                    <div class='eg'>
+                        <p class="exampletext"> /*This CSS will select all HTML elements with the class "classSelec" and change their colour to blue*/</p>
+                        <p class="exampletext"> .classSelec { <br> color:blue; <br> } </p>
+                    </div>
+                    <p> <span class="subtitle-example">ID selector:</span> Denoted by "#" and is used to select HTML elements with a specific id attribute</p>
+                    <div class='eg'>
+                        <p class="exampletext"> /*This CSS will select all HTML elements with the id "idSelec" and change their background colour to pink*/</p>
+                        <p class="exampletext"> #idSelec { <br> background-colour:pink; <br> } </p>
+                    </div>
+                    <p> <span class="subtitle-example">Attribute selector:</span> Denoted by "[ ]" and is used to select HTML elements with a specific attributes.</p>
+                    <div class='eg'>
+                        <p class="exampletext"> /*This CSS will select all HTML elements with an anchor tag and href attribute and make them orange*/</p>
+                        <p class="exampletext"> a[href] { <br> color:orange; <br> } </p>
+                    </div>
+                    <p> <span class="subtitle-example"> Child selector:</span> Denoted by ">" it is placed between 2 css selectors and selects HTML elements that match the second selector and that are direct children of the first selector</p>
+                    <div class='eg'>
+                        <p class="exampletext"> /*This CSS will select all h4 elements that are inside a div and make their background blue*/</p>
+                        <p class="exampletext"> div > h4 { <br> backround-color:blue; <br> } </p>
+                    </div>
+                    
+                    <div class="interactive">
+                        <div class="exa">
+                            <div class="options">
+                                <h3 class= "title-example pad">Interactive example of basic selectors explained above</h3>
+                                <p onclick="uniSelecFunc()" class="in">Universal Selector</p>
+                                <p onclick="classSelecFunc()" class="in">Class Selector</p>
+                                <p onclick="idSelecFunc()" class="in">ID Selector</p>
+                                <p onclick="attSelecFunc()" class="in">Attribute Selector</p>
+                                <p onclick="childSelecFunc()" class="in">Child Selector</p>
+                            </div>
+                            <div class="intIntro">
+                                <div id="uni" > <p>&lt;div></p>
+                                    <h4 id="idSelec"> &lt;h4 id="idSelec"> this is a heading &lt;/h4></h4>
+                                    <p id="classSelec" class="classSelec"> &lt;p class="classSelec"> this is a paragraph &lt;/p></p>
+                                    <p id="classSelecc" class="classSelec"> &lt;p class="classSelec"> this is another paragraph &lt;/p></p>
+                                    <p> &lt;p> this is another paragraph &lt;/p></p>
+                                    <p><a href="#" id="lnk"> &lt;p>&lt;a href="#"> this is a link to no where &lt;/a>&lt;/p></a></p>
+                                    <h4 id="idSelecc"> &lt;h4> this is a heading &lt;/h4></h4>
+                                </div> <p>&lt;/div></p>
+                                <h4>&lt;h4> this is a heading &lt;h4></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="Resources/JS/main.js"></script>
+                </div>
+                <div class="exa">
+                    <h3 class="title-example">Pseudo Selectors</h3>
+                    <p> <span class="subtitle-example">Pseudo Classes:</span> Are a selector that selects elements in a specific state e.g. in a particular position relative to another element. They allow you to apply css styles to elements without having to give them a class or id name, giving you more flexible and maintainable code.</p>
+                    <p> <span class="subsubtitle-example">First-Child pseudo class:</span> Used to select the specified selector only if its the first child of its parent</p>
+                    <div class='eg'>
+                        <p class="exampletext"> /*This CSS will select the paragraph elements and change them to green if they are the first child of their parent*/</p>
+                        <p class="exampletext"> p:first-child { <br> color:green; <br> } </p>
+                    </div>
+                    <p> <span class="subsubtitle-example">Hover pseudo class</span> Used to select elements as you move your mouse over them</p>
+                    <div class='eg'>
+                        <p class="exampletext"> /*As you hover over the position buttons in the interactive example this CSS with differing position attributes is applied*/</p>
+                        <p class="exampletext"> .posAbs:hover { <br> position:absolute; <br> } </p>
+                    </div>
+                    <p> <span class="subtitle-example">Pseudo Elements</span> Denoted by "::", they represent entities that are not included in HTML and used to style specific parts of an element.</p>
+                    <p> <span class="subsubtitle-example">First-Letter pseudo element</span> Used to select the first letter of the first line of a block level element.</p>
+                    <div class='eg'>
+                        <p class="exampletext"> /*This CSS will select the first letter in the first line of the h4 heading and make it orange*/</p>
+                        <p class="exampletext"> h4::first-letter { <br> color:orange; <br> font-size:130% <br>} </p>
+                    </div>
+                    <p> <span class="subsubtitle-example">After pseudo element</span> Creates a pseudo-element thats the last child of the selected element</p>
+                    <div class='eg'>
+                        <p class="exampletext"> /*This CSS will create a new element after h5 and add content that says "pseudo elements are cool" and colour the text blue*/</p>
+                        <p class="exampletext"> h5::after { <br> content:"pseudo elements are cool"; <br> color: cornflowerblue; <br> } </p>
+                    </div>
+
+                    
+                    <div class="interactive">
+                        <div class = "exa">
+                            <h3 class= "title-example pad">Interactive example of pseudo selectors explained above</h3>
+                            <div class="options">
+                                <p id="abs" onmouseover="absFunc()" class="in">Hover for Position-Absolute</p>
+                                <p id="fix" onmouseover="fixFunc()" class="in">Hover for Position-Fixed</p>
+                                <p id="rel" onmouseover="relFunc()" class="in">Hover for Positon-Relative</p>
+                                <p onclick="fChildSelecFunc()" class="in">First-Child</p>
+                                <p onclick="fLetterSelecFunc()" class="in">First-Letter</p>
+                                <p onclick="afterSelecFunc()" class="in">After</p>
+                            </div>
+                                <div class="intIntro">
+                                    <div>
+                                        <p id="fChild"> &lt;p>  This is a paragraph &lt;/p> </p>
+                                        <h4> &lt;h4> This is a heading &lt;h4></h4>
+                                        <p> &lt;p> This is a paragraph &lt;/p></p>
+                                        <h5 id="afterr"> &lt;h5 id="after"> This is a h5 heading &lt;/h5></h5>
+                                    </div>
+                                    <div>
+                                        <p class="ins">&lt;h4 id=fLetter> </p><h4 id="fLetter" class="ins"> This is a heading </h4><p class="ins">&lt;/h4></p></div>
+                                        <p> &lt;p> This is a paragraph &lt;/p></p>
+                                    
+                                </div>
+                                <div id="box">Box showing changing position</div>
+                        </div>
+                    </div>
+                    <script src="Resources/JS/main.js"></script>
+                </div> 
+            </div>  
+        </section>
+    </body>
+</html>
