@@ -1,0 +1,450 @@
+/* ---------------------------------- */
+/* Basic Setup */
+/* ---------------------------------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#f0f8ff !important ;
+    color: black;
+    font-family:'Lato','Raleway', sans-serif;
+    font-weight: 300;
+    font-size:20px;
+    text-rendering: optimizeLegibility;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* padding above and below eah section */
+section {
+    padding: 0px 0px; 
+}
+
+
+/* ---------------------------------- */
+/* NAVBAR - Bootstrap START */
+/* ---------------------------------- */
+
+/* set colour of navbar*/
+.navbar-default{
+    background-color: #b7d7e8 !important ;
+}
+
+/* nav bar options set margins between them, font, colour, border(transparent), and border transition*/
+.navbar-default .navbar-nav >li >a {
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    color: #153e67 !important;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s
+}
+
+/*make bottom line show when you hover over nav options*/
+.navbar-default .navbar-nav >li >a:hover,
+.navbar-default .navbar-nav >li >a:active{
+    border-bottom: 2px solid #153e67;
+}
+
+/*when nav bar is collapsed and you are hovering over the icon, change it to grey*/
+.navbar-toggle:hover {
+    background-color: #e5e5e5 !important;
+}
+
+/*change the bars on the icon from the standard bootstrap colour to blue*/
+.icon-bar {
+    background-color: #153e67 !important ;   
+}
+
+/*style the website name*/
+.website-name{
+    font-size: 100%;
+    color: #153e67; 
+    font-family: "Raleway", sans-serif; 
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+/* ---------------------------------- */
+/* NAVBAR - Bootstrap END */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* GENERAL THINGS USED ON ALL PAGES START */
+/* ---------------------------------- */
+/*large headings on each page align in middle and make font size bigger*/
+.page-title {
+    font-size: 140%;
+    text-align: center;
+}
+/*create line underneath page titles thats orange*/
+.page-title:after {
+    display: block;
+    height: 2px;
+    background-color:#e67e22;
+    content: " ";
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* style subtitles */
+.title-explanation{
+    font-size: 120%;
+}
+
+/*style all content*/
+.explanation{
+    font-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* style the boxes where all of the intro stuff is stored (purpose, history)*/
+.intro {
+    border-color: #fff;
+    border-width: thin;
+    border-style: solid;
+    padding: 0px 30px;
+    margin-top: 20px;
+    background-color: #cfe0e8;
+    border-radius: 6px;
+}
+
+/*style the white boxes that the examples go in */
+.exa{
+    padding: 0px 30px;
+    background-color: white;
+    border-radius: 6px;
+    border-color: #cfe0e8;
+    border-width: thin;
+    border-style: solid;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+/*style the example titles*/
+.title-example{
+    font-size: 120%;
+    text-align: center;
+    
+}
+/*create the dotted line that goes underneath each example title*/
+.title-example:after{
+    display: block;
+    height: 1px;
+    content: " ";
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-bottom-style: dotted;
+    border-bottom-width: thin;
+    border-bottom-color: #153e67;
+}
+
+/* ---------------------------------- */
+/* GENERAL THINGS USED ON ALL PAGES END */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* JS EXAMPLES START */
+/* ---------------------------------- */
+/*style the box that the corona virus death example is in*/
+.ajax {
+    border: solid thin #cfe0e8;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/*corona virus deaths title*/
+.topic {
+    text-align: center;
+    font-weight: 700;
+    border-bottom: solid thin #e67e22;
+}
+/*corona virus deaths subtitle*/
+.country {
+    font-weight: 400;
+}
+
+/*style the form input boxes*/
+input {
+    border: thin solid #cccccc;
+    border-radius: 3px;
+    padding: 2px;
+}
+/*add padding to the bottom of the form */
+form {
+    padding-bottom: 10px;
+}
+
+/*changes the font and appearance of examples */
+.eg {
+    border: thin #cfe0e8 solid;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 90%;
+}
+
+/* ---------------------------------- */
+/* JS EXAMPLES END */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* CSSS Cascading example START */
+/* ---------------------------------- */
+
+.cascadeOutput {
+    padding: 0px 30px;
+    background-color: white;
+    border-radius: 6px;
+    border-color: #cfe0e8;
+    border-width: thin;
+    border-style: solid;
+    margin-top: 5px; 
+    border: thin #cfe0e8 solid;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.cascadeDiv {
+    background-color: #cfe0e8;
+}
+
+.cascadePara {
+    background-color: #cfffe5;
+}
+
+#cascadeParaId {
+    background-color: #fadadd;
+}
+
+
+
+/* ---------------------------------- */
+/* CSSS Cascading example END*/
+/* ---------------------------------- */
+
+
+/* ---------------------------------- */
+/* CSSS examples START */
+/* ---------------------------------- */
+
+/*css examples have extra subtitles that are blue so style them and add a bottom border as an underline */
+.subtitle-example{
+    font-size: 100%;
+    color: #153e67;
+    font-weight: 700;
+    border-bottom: solid thin #153e67;
+}
+
+/*css examples have extra subtitles, stype the subtitle of the subtitle*/
+.subsubtitle-example{
+    font-size: 100%;
+    color: #153e67;
+    font-weight: 700;
+}
+
+/* ---------------------------------- */
+/* CSSS examples END */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* CSSS interactive START */
+/* ---------------------------------- */
+/*style each of the interactive selector options as an inline box*/
+.in {
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 100%;
+    color: #153e67;
+    font-weight: 700;
+    
+}
+/*center the interactive selector options*/
+.options {
+    align-content: center;
+    text-align: center;
+    
+}
+
+/*change the colour of the interactive selector options when you hover over them*/
+.in:hover {
+    color: #00a3a3;
+}
+
+/* box styling*/
+#box {
+    border: 1px dotted #000;
+    background-color: #eaeaea;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*used in javascipt to change the position of the "box"*/
+.posFix {
+    position: fixed; 
+    opacity: 0.85;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*used in javascipt to change the position of the "box"*/
+.posRel{
+    position: relative; 
+}
+
+/*used in javascipt to change the position of the "box"*/
+.posAbs{
+    position: absolute; 
+}
+
+/*change the styling of the html shown so that it is all the same size and font"*/
+.intIntro {
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 12px !important;
+}
+
+/*change the size of h4 elements*/
+h4 {
+    font-size: 12px !important;
+}
+
+/*change size of h5 elements*/
+h5 {
+    font-size: 12px !important;
+}
+
+/*change colour of anchor tags used in the interactive example*/
+#lnk{
+    color: #5a5a5a;
+}
+
+/*add margin to the bottom so that the box example fits when its in absolute posistioning*/
+.interactive {
+    margin-bottom: 50px;
+}
+
+/*used in javascipt to change the first letter to orange*/
+.firstLetter::first-letter{
+    font-size: 130%;
+    color: orange;
+}
+
+/*used in javascipt to change after example*/
+.aft::after{
+    content: " pseudo elements are cool";
+    color: cornflowerblue;
+}
+
+/*used to make h4 inline block so that i could change the colour of the first letter of the word this, not the <h4 text*/
+.ins {
+    display: inline-block;
+}
+
+/* ---------------------------------- */
+/* CSSS interactive END */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* HTML timeline START */
+/* ---------------------------------- */
+
+/*timeline title underline */
+.title-timeline{
+    font-size: 110%;
+    text-align: center;
+}
+
+/*timeline title underline */
+.title-timeline:after {
+    display: block;
+    height: 1px;
+    background-color:#e67e22;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+/* ---------------------------------- */
+/* HTML timeline END */
+/* ---------------------------------- */
+
+/* ---------------------------------- */
+/* HTML examples start */
+/* ---------------------------------- */
+
+/* use to indent certain parts of the examples */
+.indent{
+    padding-left: 30px;
+}
+
+
+/* ---------------------------------- */
+/* HTML example END */
+/* ---------------------------------- */
+
+
+/* ---------------------------------- */
+/* About me section START */
+/* ---------------------------------- */
+/* responsive background image */
+.back {
+    background-image: url('surf-back.jpg') ;
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-size: cover;
+}
+
+/*text box formatting*/
+.aboutMe{
+    margin-top:200px;
+    border: thin white 2px;
+    background-color: rgba(207, 224, 232, 0.57) ;
+    position: relative;
+    border-radius: 6px;
+    padding: 10px; 
+    
+}
+
+/*github and linkedin profile links align in middle*/
+.cent {
+    text-align: center;
+    color: black;
+}
+
+/*github and linkedin profile links colour*/
+.colour{    
+    color: #333333;
+}
+
+/*github and linkedin profile links hover colour*/
+.colour:hover{
+    color: #5094d8;
+    font-weight:600;
+    font-size: 110%;
+}
+
+/* ---------------------------------- */
+/* About me section END*/
+/* ---------------------------------- */
